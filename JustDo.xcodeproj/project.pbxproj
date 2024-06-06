@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012656552C1210D1006D0FF2 /* Categorry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012656532C1210D1006D0FF2 /* Categorry+CoreDataClass.swift */; };
+		012656562C1210D1006D0FF2 /* Categorry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012656542C1210D1006D0FF2 /* Categorry+CoreDataProperties.swift */; };
 		01E9BBFA2C11F23800A72AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9BBF92C11F23800A72AEB /* AppDelegate.swift */; };
 		01E9BBFC2C11F23800A72AEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9BBFB2C11F23800A72AEB /* SceneDelegate.swift */; };
 		01E9BBFE2C11F23800A72AEB /* JustDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9BBFD2C11F23800A72AEB /* JustDoViewController.swift */; };
@@ -16,9 +18,12 @@
 		01E9BC092C11F23A00A72AEB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 01E9BC082C11F23A00A72AEB /* Base */; };
 		01E9BC122C11F31E00A72AEB /* Items+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9BC102C11F31E00A72AEB /* Items+CoreDataClass.swift */; };
 		01E9BC132C11F31E00A72AEB /* Items+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9BC112C11F31E00A72AEB /* Items+CoreDataProperties.swift */; };
+		01E9BC172C12080200A72AEB /* CategorryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9BC162C12080200A72AEB /* CategorryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012656532C1210D1006D0FF2 /* Categorry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categorry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		012656542C1210D1006D0FF2 /* Categorry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categorry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		01E9BBF62C11F23800A72AEB /* JustDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E9BBF92C11F23800A72AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01E9BBFB2C11F23800A72AEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		01E9BC0A2C11F23A00A72AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01E9BC102C11F31E00A72AEB /* Items+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataClass.swift"; sourceTree = "<group>"; };
 		01E9BC112C11F31E00A72AEB /* Items+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		01E9BC162C12080200A72AEB /* CategorryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +68,14 @@
 		01E9BBF82C11F23800A72AEB /* JustDo */ = {
 			isa = PBXGroup;
 			children = (
+				012656532C1210D1006D0FF2 /* Categorry+CoreDataClass.swift */,
+				012656542C1210D1006D0FF2 /* Categorry+CoreDataProperties.swift */,
 				01E9BC112C11F31E00A72AEB /* Items+CoreDataProperties.swift */,
 				01E9BC102C11F31E00A72AEB /* Items+CoreDataClass.swift */,
 				01E9BBF92C11F23800A72AEB /* AppDelegate.swift */,
 				01E9BBFB2C11F23800A72AEB /* SceneDelegate.swift */,
 				01E9BBFD2C11F23800A72AEB /* JustDoViewController.swift */,
+				01E9BC162C12080200A72AEB /* CategorryViewController.swift */,
 				01E9BC022C11F23800A72AEB /* JustDo.xcdatamodeld */,
 				01E9BBFF2C11F23800A72AEB /* Main.storyboard */,
 				01E9BC052C11F23A00A72AEB /* Assets.xcassets */,
@@ -151,7 +160,10 @@
 				01E9BBFE2C11F23800A72AEB /* JustDoViewController.swift in Sources */,
 				01E9BBFA2C11F23800A72AEB /* AppDelegate.swift in Sources */,
 				01E9BBFC2C11F23800A72AEB /* SceneDelegate.swift in Sources */,
+				012656552C1210D1006D0FF2 /* Categorry+CoreDataClass.swift in Sources */,
+				012656562C1210D1006D0FF2 /* Categorry+CoreDataProperties.swift in Sources */,
 				01E9BC122C11F31E00A72AEB /* Items+CoreDataClass.swift in Sources */,
+				01E9BC172C12080200A72AEB /* CategorryViewController.swift in Sources */,
 				01E9BC132C11F31E00A72AEB /* Items+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
