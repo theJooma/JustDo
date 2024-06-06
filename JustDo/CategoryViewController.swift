@@ -12,7 +12,7 @@ class CategoryViewController: UITableViewController{
     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadCategories()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

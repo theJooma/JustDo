@@ -34,16 +34,19 @@ class JustDoViewController: UITableViewController {
         return cell
     }
     // MARK: - TableView Delegate Methods
-    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+            if editingStyle == .delete {
+                context?.delete(itemArray[indexPath.row])
+                itemArray.remove(at: indexPath.row)
+                saveItems()
+            }
+        }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //itemArray[indexPath.row].done = !itemArray[indexPath.row].done
-        context?.delete(itemArray[indexPath.row])
-        itemArray.remove(at: indexPath.row)
-        
+        itemArray[indexPath.row].done = !itemArray[indexPath.row].done
         saveItems()
         tableView.deselectRow(at: indexPath, animated: true)
+        tableView.reloadData()
     }
-    
     
     @IBAction func addButtonClicked(_ sender: UIBarButtonItem) {
         var textfield = UITextField()
@@ -78,6 +81,12 @@ class JustDoViewController: UITableViewController {
         self.tableView.reloadData()
     }
     func loadItems(with request: NSFetchRequest<Items> = Items.fetchRequest(), predicate: NSPredicate? = nil){
+        let categoryPredicate = NSPredicate(format: "parentcat.name MATCHES %@", selectedCategory!.name!)
+        if let additionalPredicate = predicate{
+            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate,additionalPredicate])
+        }else{
+            request.predicate = categoryPredicate
+        }
         do{
             itemArray = try context!.fetch(request)
         }catch{
@@ -85,6 +94,7 @@ class JustDoViewController: UITableViewController {
         }
         tableView.reloadData()
     }
+    
     
     
 }
