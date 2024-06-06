@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="1413" y="-20"/>
         </scene>
-        <!--Categorry View Controller-->
+        <!--Categories-->
         <scene sceneID="HHM-9X-qXp">
             <objects>
-                <tableViewController id="Kuj-4e-P0p" customClass="CategorryViewController" customModule="JustDo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Kuj-4e-P0p" customClass="CategoryViewController" customModule="JustDo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="P2Y-gK-wAT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,9 +74,16 @@
                             <outlet property="delegate" destination="Kuj-4e-P0p" id="dJu-Rg-hn5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="EJY-Ms-oaP"/>
+                    <navigationItem key="navigationItem" title="Categories" id="EJY-Ms-oaP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="psL-t2-bDD">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addCatButton:" destination="Kuj-4e-P0p" id="Pxf-o5-pXS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <segue destination="Drm-0f-yCo" kind="show" id="Eac-BN-UdD"/>
+                        <segue destination="Drm-0f-yCo" kind="show" identifier="goToItems" id="Eac-BN-UdD"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pyH-J0-Pf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -119,7 +126,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

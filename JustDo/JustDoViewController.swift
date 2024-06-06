@@ -9,6 +9,11 @@ import UIKit
 import CoreData
 class JustDoViewController: UITableViewController {
     var itemArray = [Items]()
+    var selectedCategory: Categori?{
+        didSet{
+            loadItems()
+        }
+    }
     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +30,7 @@ class JustDoViewController: UITableViewController {
         let item = itemArray[indexPath.row]
         cell.textLabel?.text = item.title
         cell.accessoryType = item.done ? .checkmark : .none
+        item.parentcat = self.selectedCategory
         return cell
     }
     // MARK: - TableView Delegate Methods
