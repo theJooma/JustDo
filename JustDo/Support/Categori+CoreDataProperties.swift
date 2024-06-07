@@ -2,7 +2,7 @@
 //  Categori+CoreDataProperties.swift
 //  JustDo
 //
-//  Created by Jumageldi on 6.06.2024.
+//  Created by Jumageldi on 7.06.2024.
 //
 //
 
@@ -17,6 +17,7 @@ extension Categori {
     }
 
     @NSManaged public var name: String?
+    @NSManaged public var emoji: String?
     @NSManaged public var items: NSSet?
 
 }

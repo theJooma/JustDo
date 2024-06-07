@@ -52,6 +52,7 @@ class CategoryViewController: UITableViewController{
             destinationVC.selectedCategory = categoryArray[indexPath.row]
         }
     }
+  
     
     //MARK: - CRUD
     
@@ -77,6 +78,7 @@ class CategoryViewController: UITableViewController{
         var textFieldss = UITextField()
         
         let alert = UIAlertController(title: "Yeni kategori ekle", message: "", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "İptal", style: .cancel, handler: nil)
         let action = UIAlertAction(title: "Ekle", style: .default) { action in
             
             let newCategory = Categori(context: self.context!)
@@ -89,12 +91,12 @@ class CategoryViewController: UITableViewController{
             alertTexxtField.placeholder = "Okul,İş,..."
             textFieldss = alertTexxtField
         }
+        alert.addAction(cancelAction)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
     
-    
-
+ 
     
     // MARK: - Category is Empty?
 
@@ -146,6 +148,9 @@ class CategoryViewController: UITableViewController{
        func toggleEmptyStateView(show: Bool) {
            tableView.backgroundView?.isHidden = !show
        }
+   
+
+    
    }
     
     

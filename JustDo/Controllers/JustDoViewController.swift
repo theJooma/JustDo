@@ -52,6 +52,7 @@ class JustDoViewController: UITableViewController {
         var textfield = UITextField()
         
         let alert = UIAlertController(title: "Yeni öğe ekle", message: "", preferredStyle: .alert)
+     
         let action = UIAlertAction(title: "Ekle", style: .default) { action in
             
             let newItem = Items(context: self.context!)
@@ -65,7 +66,9 @@ class JustDoViewController: UITableViewController {
             alertTextField.placeholder = "Add New Item"
             textfield = alertTextField
         }
+      
         alert.addAction(action)
+        
         present(alert, animated: true, completion: nil)
     }
     //MARK: - Model MAnipulations Model

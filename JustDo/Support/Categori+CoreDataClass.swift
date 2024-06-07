@@ -2,7 +2,7 @@
 //  Categori+CoreDataClass.swift
 //  JustDo
 //
-//  Created by Jumageldi on 6.06.2024.
+//  Created by Jumageldi on 7.06.2024.
 //
 //
 

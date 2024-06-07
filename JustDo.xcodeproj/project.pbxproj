@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018D7C2E2C13497600F12AB6 /* Categori+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D7C2C2C13497600F12AB6 /* Categori+CoreDataClass.swift */; };
+		018D7C2F2C13497600F12AB6 /* Categori+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D7C2D2C13497600F12AB6 /* Categori+CoreDataProperties.swift */; };
 		019716802C12356B00901FC6 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197167F2C12356B00901FC6 /* CategoryViewController.swift */; };
-		0197168B2C123EFC00901FC6 /* Categori+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019716892C123EFC00901FC6 /* Categori+CoreDataClass.swift */; };
-		0197168C2C123EFC00901FC6 /* Categori+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197168A2C123EFC00901FC6 /* Categori+CoreDataProperties.swift */; };
 		01995C2B2C1241A8003D8110 /* Items+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01995C292C1241A7003D8110 /* Items+CoreDataClass.swift */; };
 		01995C2C2C1241A8003D8110 /* Items+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01995C2A2C1241A7003D8110 /* Items+CoreDataProperties.swift */; };
 		01E9BBFA2C11F23800A72AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E9BBF92C11F23800A72AEB /* AppDelegate.swift */; };
@@ -22,9 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018D7C2C2C13497600F12AB6 /* Categori+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categori+CoreDataClass.swift"; sourceTree = "<group>"; };
+		018D7C2D2C13497600F12AB6 /* Categori+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categori+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0197167F2C12356B00901FC6 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		019716892C123EFC00901FC6 /* Categori+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categori+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0197168A2C123EFC00901FC6 /* Categori+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categori+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		01995C292C1241A7003D8110 /* Items+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataClass.swift"; sourceTree = "<group>"; };
 		01995C2A2C1241A7003D8110 /* Items+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		01E9BBF62C11F23800A72AEB /* JustDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,10 +52,10 @@
 		018D7C282C13454700F12AB6 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				018D7C2C2C13497600F12AB6 /* Categori+CoreDataClass.swift */,
+				018D7C2D2C13497600F12AB6 /* Categori+CoreDataProperties.swift */,
 				01995C2A2C1241A7003D8110 /* Items+CoreDataProperties.swift */,
 				01995C292C1241A7003D8110 /* Items+CoreDataClass.swift */,
-				019716892C123EFC00901FC6 /* Categori+CoreDataClass.swift */,
-				0197168A2C123EFC00901FC6 /* Categori+CoreDataProperties.swift */,
 				01E9BBF92C11F23800A72AEB /* AppDelegate.swift */,
 				01E9BBFB2C11F23800A72AEB /* SceneDelegate.swift */,
 			);
@@ -174,8 +174,8 @@
 			files = (
 				01995C2B2C1241A8003D8110 /* Items+CoreDataClass.swift in Sources */,
 				01995C2C2C1241A8003D8110 /* Items+CoreDataProperties.swift in Sources */,
-				0197168B2C123EFC00901FC6 /* Categori+CoreDataClass.swift in Sources */,
-				0197168C2C123EFC00901FC6 /* Categori+CoreDataProperties.swift in Sources */,
+				018D7C2E2C13497600F12AB6 /* Categori+CoreDataClass.swift in Sources */,
+				018D7C2F2C13497600F12AB6 /* Categori+CoreDataProperties.swift in Sources */,
 				01E9BC042C11F23800A72AEB /* JustDo.xcdatamodeld in Sources */,
 				01E9BBFE2C11F23800A72AEB /* JustDoViewController.swift in Sources */,
 				01E9BBFA2C11F23800A72AEB /* AppDelegate.swift in Sources */,
