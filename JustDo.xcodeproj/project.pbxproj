@@ -49,13 +49,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		018D7C282C13454700F12AB6 /* Support */ = {
+		012684362C46E8CA00AB39A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				018D7C2C2C13497600F12AB6 /* Categori+CoreDataClass.swift */,
 				018D7C2D2C13497600F12AB6 /* Categori+CoreDataProperties.swift */,
 				01995C2A2C1241A7003D8110 /* Items+CoreDataProperties.swift */,
 				01995C292C1241A7003D8110 /* Items+CoreDataClass.swift */,
+				01E9BC022C11F23800A72AEB /* JustDo.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		012684372C46E8D600AB39A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01E9BBFF2C11F23800A72AEB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		018D7C282C13454700F12AB6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				01E9BBF92C11F23800A72AEB /* AppDelegate.swift */,
 				01E9BBFB2C11F23800A72AEB /* SceneDelegate.swift */,
 			);
@@ -90,10 +106,10 @@
 		01E9BBF82C11F23800A72AEB /* JustDo */ = {
 			isa = PBXGroup;
 			children = (
+				012684362C46E8CA00AB39A9 /* Model */,
+				012684372C46E8D600AB39A9 /* View */,
 				018D7C292C13458A00F12AB6 /* Controllers */,
 				018D7C282C13454700F12AB6 /* Support */,
-				01E9BC022C11F23800A72AEB /* JustDo.xcdatamodeld */,
-				01E9BBFF2C11F23800A72AEB /* Main.storyboard */,
 				01E9BC052C11F23A00A72AEB /* Assets.xcassets */,
 				01E9BC072C11F23A00A72AEB /* LaunchScreen.storyboard */,
 				01E9BC0A2C11F23A00A72AEB /* Info.plist */,
